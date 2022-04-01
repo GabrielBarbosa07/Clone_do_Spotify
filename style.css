@@ -1,0 +1,194 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Cabeçalho*/
+#navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.657);
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-conteiner{
+    width: 60%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0 ;
+}
+.logo{
+    height: 40px;
+    width:auto ;
+}
+.nav-conteiner>ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+.nav-conteiner>ul li{
+    padding:0px 20px ;
+}
+.nav-conteiner>ul li:hover{
+    color: #1db954 ;
+    cursor: pointer;
+    transition: .5s all;
+}
+.nav-conteiner>ul li:nth-child(3){
+    border-right:1px solid white ;
+}
+/*Showcase*/
+.showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)100%),  url(img/showcase.webp);
+    background-position: center center;
+    background-size: cover;
+}
+.showcase-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcase-conteiner>h2{
+    font-size: 5rem;
+}
+.showcase-conteiner>p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+.btn{
+    background-color: #1DB954;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius:30px ;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #1ed760;
+    cursor: pointer;
+    transition: .5s;
+}
+/*Footer*/
+#footer{
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+}
+.footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+.footer-content>.menu{
+    margin: 0px 40px;
+    list-style: none;
+}
+.footer-content>.menu>.footer-item{
+    margin: 25px 0;
+    transition: .5s all;
+}
+.footer-content>.menu>.footer-item:hover{
+    color:#1db954 ;
+    cursor: pointer;
+}
+.footer-content>.menu>p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#919496;
+    font-size: 0.8rem;
+}
+/*Social*/
+.social{
+    display: flex;
+}
+.social>i{
+    margin: 0 20px;
+    font-size: 1.7rem;
+}
+.social>i:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: .5s all;
+}
+/*Footer info*/
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+.footer-info>.footer-info-itens{
+    display: flex;
+    list-style: none;
+}
+.footer-info>.footer-info-itens>.footer-info-item{
+    margin:0 10px ;
+}
+.footer-info>.footer-info-itens>.footer-info-item:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: .5s all;
+}
+.footer-info>.direitos{
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    align-items: center;
+}
+.footer-info>.direitos>.bandeira{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-info>.direitos>.bandeira:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: .5s all;
+}
+.footer-info>.direitos>p:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: .5s all;
+}
+.footer-info>.direitos>.bandeira>.brasil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+/*Footer do footer*/
+.dev{
+    display: flex;
+    justify-content: center;
+    color: #919496;
+    background-color: black;
+}
+.dev>h2{
+    font-size: 0.75rem;
+}
+.dev>h2>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #919496;
+}
+.dev>h2>a:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: .5s;
+}
